@@ -150,11 +150,7 @@ Creation
 .item {
   text-align: center;
   width: 18rem;
-}
-
-.item {
-  text-align: center;
-  /* width: 18rem; */
+  justify-content: center;
 }
 
 .btn {
