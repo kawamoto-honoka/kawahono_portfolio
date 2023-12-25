@@ -3,6 +3,7 @@
 
 h1 {
   font-family: 'Itim', cursive;
+  text-decoration: none;
 }
 
 html {
@@ -15,7 +16,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration-color: none;
 }
 
 img {
@@ -47,6 +48,16 @@ li {
   margin-bottom: 65px;
 }
 
+.lead {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  text-decoration-color: none;
+}
+
+
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
@@ -72,6 +83,7 @@ li {
 
 #header li a {
   color: #24292e;
+  text-decoration: none;
 }
 
 #header li a:hover {
@@ -114,6 +126,9 @@ About
 /*-------------------------------------------
 Profile
 -------------------------------------------*/
+#profile {
+  text-align: center;
+}
 #profile ul {
   display: flex;
   justify-content: space-between;
@@ -126,28 +141,30 @@ Profile
   margin-bottom: 23px;
 }
 
+#profile p.title {
+  font-weight: bold;
+}
 /*-------------------------------------------
-News
+Creation
 -------------------------------------------*/
-#news dl {
-  display: flex;
-  flex-wrap: wrap;
-  border-top: solid 1px #c8c8c8;
-  margin-bottom: 20px;
+.item {
+  text-align: center;
+  width: 18rem;
 }
 
-#news dt {
-  width: 20%;
-  border-bottom: solid 1px #c8c8c8;
-  padding: 15px;
+.item {
+  text-align: center;
+  /* width: 18rem; */
 }
 
-#news dd {
-  width: 80%;
-  border-bottom: solid 1px #c8c8c8;
-  padding: 15px;
+.btn {
+  text-align: center;
 }
 
+#creation .card-title {
+  font-size: large;
+  font-weight: bold;
+}
 /*-------------------------------------------
 Contact
 -------------------------------------------*/
@@ -198,7 +215,7 @@ Contact
 フッター
 -------------------------------------------*/
 #footer {
-  background-color: #24292e;
+  /* background-color: #24292e; */
   color: #fff;
   font-size: 0.5rem;
   padding: 10px 20px;
