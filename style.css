@@ -6,11 +6,6 @@
   justify-items: center;
 } */
 
-h1 {
-  font-family: 'Itim', cursive;
-  text-decoration: none;
-}
-
 html {
   font-size: 100%;
   font-weight: bold;
@@ -18,18 +13,32 @@ html {
 
 body {
   color: #24292e;
+  background-color: #fff;
+}
+
+
+h1 {
+  font-family: 'Itim', cursive;
+  text-decoration: none;
+}
+
+/*reset*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration-color: none;
 }
 
-img {
-  max-width: 100%;
-}
-
 li {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 .wrapper {
@@ -82,17 +91,50 @@ li {
 }
 
 #header li {
-  font-size: 0.9rem;
+  font-size: 14px;
   margin-left: 30px;
+
 }
 
-#header li a {
+#header ul li a {
   color: #24292e;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #fff;
+  padding: 3px;
   text-decoration: none;
+  /* 本来の位置を基準に相対的に配置を移動できる */
+  position: relative;
 }
 
-#header li a:hover {
-  opacity: 0.7;
+/* ホバーのエフェクト */
+#header li a::after {
+  /* マークのスタイル */
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #ef86b2;
+  border-radius: 50%;
+  top: -15px;
+  left: calc(50% - 5px);
+  /* 不透明度0で非表示 */
+  opacity: 0;
+  /* 上方向へ50％移動 */
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  /* アニメーションの速度設定 */
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+#header li a:hover::after {
+  /* 不透明度1で表示 */
+  opacity: 1;
+  /* 0位置に移動 */
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
 #header li img.icon {
@@ -134,6 +176,7 @@ Profile
 #profile {
   text-align: center;
 }
+
 #profile ul {
   display: flex;
   justify-content: space-between;
@@ -149,6 +192,7 @@ Profile
 #profile p.title {
   font-weight: bold;
 }
+
 /*-------------------------------------------
 Creation
 -------------------------------------------*/
@@ -167,6 +211,7 @@ Creation
   font-size: large;
   font-weight: bold;
 }
+
 /*-------------------------------------------
 Contact
 -------------------------------------------*/
