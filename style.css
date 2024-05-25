@@ -5,73 +5,57 @@
   justify-content: center;
   justify-items: center;
 } */
-
 html {
   font-size: 100%;
   font-weight: bold;
 }
-
 body {
   color: #24292e;
   background-color: #fff;
 }
-
-
 h1 {
   font-family: 'Itim', cursive;
   text-decoration: none;
 }
-
 /*reset*/
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 a {
   text-decoration-color: none;
 }
-
 li {
   list-style: none;
 }
-
 img {
   max-width: 100%;
 }
-
 .wrapper {
   max-width: 960px;
   margin: 0 auto 130px auto;
   font-size: 0.9rem;
   padding: 0 4%;
 }
-
-.site-title {
+.siteTitle {
   line-height: 1px;
 }
-
-.site-title a {
+.siteTitle a {
   display: block;
 }
-
-.sec-title {
+.secTitle {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 65px;
 }
-
 .lead {
   text-align: center;
 }
-
 .link {
   text-decoration: none;
   text-decoration-color: none;
 }
-
-
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
@@ -84,18 +68,15 @@ img {
   margin: 0 auto;
   padding: 0 4%;
 }
-
 #header ul {
   display: flex;
   padding: 10px 0;
 }
-
 #header li {
   font-size: 14px;
   margin-left: 30px;
 
 }
-
 #header ul li a {
   color: #24292e;
   font-weight: bold;
@@ -106,7 +87,6 @@ img {
   /* 本来の位置を基準に相対的に配置を移動できる */
   position: relative;
 }
-
 /* ホバーのエフェクト */
 #header li a::after {
   /* マークのスタイル */
@@ -128,7 +108,6 @@ img {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
-
 #header li a:hover::after {
   /* 不透明度1で表示 */
   opacity: 1;
@@ -136,82 +115,67 @@ img {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-
 #header li img.icon {
   width: 20px;
 }
-
 /*-------------------------------------------
 Mainvisual
 -------------------------------------------*/
 #mainvisual {
   margin-bottom: 80px;
 }
-
 #mainvisual img {
   width: 100%;
   max-width: 1920px;
   height: 420px;
   object-fit: cover;
 }
-
 /*-------------------------------------------
 About
 -------------------------------------------*/
 #about ul {
   margin-bottom: 30px;
 }
-
 #about li:first-child {
   margin-bottom: 30px;
 }
-
 #about p {
   text-align: justify;
 }
-
 /*-------------------------------------------
 Profile
 -------------------------------------------*/
 #profile {
   text-align: center;
 }
-
 #profile ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
-
 #profile li {
   width: 31%;
   margin-bottom: 23px;
 }
-
 #profile p.title {
   font-weight: bold;
 }
-
 /*-------------------------------------------
 Creation
 -------------------------------------------*/
-
 .col-md-4 {
   text-align: center;
   width: 18rem;
   justify-content: center;
 }
-
 .btn {
   text-align: center;
 }
-
-#creation .card-title {
+#creation .cardTitle {
   font-size: large;
   font-weight: bold;
 }
-
 /*-------------------------------------------
 Contact
 -------------------------------------------*/
@@ -220,31 +184,25 @@ Contact
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-
 #contact dt {
   width: 15%;
 }
-
 #contact dd {
   width: 85%;
   margin-bottom: 10px;
 }
-
 #contact dd input,
 #contact dd textarea {
   width: 100%;
   border: solid 1px #c8c8c8;
   padding: 10px;
 }
-
 #contact dd textarea {
   height: 10rem;
 }
-
 #contact .button {
   text-align: center;
 }
-
 #contact .button input {
   width: 200px;
   background-color: #24292e;
@@ -252,12 +210,10 @@ Contact
   padding: 15px 0;
   border: solid 1px #24292e;
 }
-
 #contact .button input:hover {
   background: #fff;
   color: #24292e;
 }
-
 /*-------------------------------------------
 フッター
 -------------------------------------------*/
@@ -268,7 +224,6 @@ Contact
   padding: 10px 20px;
   text-align: center;
 }
-
 /*-------------------------------------------
 SP
 -------------------------------------------*/
@@ -276,15 +231,12 @@ SP
   .wrapper {
     margin-bottom: 70px;
   }
-
   .site-title {
     margin-top: 20px;
   }
-
   .sec-title {
     margin-bottom: 40px;
   }
-
   /*-------------------------------------------
   ヘッダー
   -------------------------------------------*/
@@ -293,56 +245,46 @@ SP
     height: auto;
     flex-direction: column;
   }
-
   #header li {
     font-size: 0.8rem;
     margin-left: 20px;
   }
-
   #header li:first-child {
     margin-left: 0;
   }
-
   /*-------------------------------------------
   Works
   -------------------------------------------*/
   #works ul {
     flex-direction: column;
   }
-
   #works li {
     width: 100%;
   }
-
   /*-------------------------------------------
   News
   -------------------------------------------*/
   #news dl {
     flex-direction: column;
   }
-
   #news dt {
     width: 100%;
     border-bottom: none;
     padding-bottom: 0;
   }
-
   #news dd {
     width: 100%;
     padding-top: 0;
   }
-
   /*-------------------------------------------
   Contact
   -------------------------------------------*/
   #contact dl {
     flex-direction: column;
   }
-
   #contact dt {
     width: 100%;
   }
-
   #contact dd {
     width: 100%;
   }
